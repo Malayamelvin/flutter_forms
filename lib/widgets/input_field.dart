@@ -31,6 +31,7 @@ class InputFields extends StatelessWidget {
       obscureText: textObscure,
       decoration: InputDecoration(
         filled: true,
+        contentPadding: const EdgeInsets.symmetric(vertical: 8.0),
         fillColor: Colors.white,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,

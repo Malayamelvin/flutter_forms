@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                   const Text(
                     "Login Page",
                     style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
@@ -89,20 +89,22 @@ class _LoginPageState extends State<LoginPage> {
                           },
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CustomText(
                               customText: "Don't have an account?",
                               textColor: Colors.white,
-                              textSize: 16,
+                              textSize: 11,
                             ),
                             TextButton(
-                                onPressed: () {},
-                                child: CustomTextButton(
-                                  buttonText: 'click here to sign up',
-                                  callback: () {
-                                    Get.to(const SignUpage());
-                                  },
-                                )),
+                              onPressed: () {},
+                              child: CustomTextButton(
+                                buttonText: 'click here to sign up',
+                                callback: () {
+                                  Get.to(const SignUpage());
+                                },
+                              ),
+                            ),
                           ],
                         )
                       ],

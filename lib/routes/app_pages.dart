@@ -6,6 +6,8 @@ import 'package:formapp/pages/signup_page.dart';
 import 'package:formapp/routes/app_routes.dart';
 import 'package:get/get.dart';
 
+// Class containing links between Pages and route names
+
 class AppPages {
   static const initial = Routes.home;
 
