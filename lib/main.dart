@@ -2,28 +2,30 @@
 
 import 'package:flutter/material.dart';
 import 'package:formapp/pages/login_page.dart';
+import 'package:formapp/pages/signup_page.dart';
 import 'package:formapp/routes/app_pages.dart';
+import 'package:formapp/routes/app_routes.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  AppPages route = AppPages();
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      // getPages: AppPages.routes,
+      getPages: route.getPages,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
     );
   }
 }
